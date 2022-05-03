@@ -1,0 +1,230 @@
+/* PC */
+@media screen and (min-width: 1024px) {
+    /* .wrapper {
+        max-width: 900px;
+    } */
+}
+/* pc low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wrapper {
+        max-width: 900px;
+    }
+}
+/* taplet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 700px;
+    }
+    /* menu */
+    .menu {
+        width: 50%;
+    }
+    /* hero */
+    .hero__heading  {
+        font-size: 3rem;
+    }
+    /* rating */
+    #rating {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rating__heading {
+        max-width: none;
+        text-align: center;
+    }
+    .rating__wrap {
+        width: 100%;
+    }
+    /* desc */
+    #desc {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .desc__heading {
+        text-align: center;
+    }
+    /* layout */
+    .layout__info {
+        flex-wrap: wrap;
+    }
+    .layout__block  {
+        width: 32%;
+    }
+    /* subcribe */
+    #subcribe {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .subcribe__title {
+        width: 100%;
+    }
+    /* footer */
+    #footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer__block {
+        width: 46%;
+    }
+}
+/* taplet && mobile */
+@media screen and (max-width: 1023px) {
+    /* nav */
+    .nav__menu {
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(1,1,1,0.4);
+        align-items: start;
+        z-index: 20;
+        transform: translateX(-100%);
+        transition: all ease 0.4s;
+    }
+    .nav__menu.active {
+        transform: translateX(0);
+    }
+    .menu {
+        flex-direction: column;
+        padding: 80px 20px;
+        align-items: start;
+        background-color: var(--white-color);
+        height: 100%;
+        justify-content: unset;
+        position: relative;
+        transform: translateX(-100%);
+    }
+    .nav__menu.active .menu {
+        transform: translateX(0);
+        transition: all ease 0.6s;
+    }
+    .menu__second {
+        width: 400%;
+    }
+    .nav__menu-icon  {
+        display: block;
+    }
+    .menu-link {
+        
+    }
+    .nav__btn {
+        
+    }
+    .nav__btn {
+        display: none;
+    }
+    .menu__close {
+        display: block;
+    }
+    /* desc */
+    .desc__content {
+        text-align: unset;
+    }
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    .wrapper {
+        padding: 0 20px;
+    }
+     /* menu */
+     .menu {
+        width: 100%;
+    }
+/* HERO */
+    #hero {
+        flex-direction: column;
+    }
+    .hero__content {
+        width: 100%;
+        padding: 120px 20px;
+    }
+    .hero__wrap-btn {
+        flex-direction: column;
+    }
+    .hero__btn {
+        width: 100%;
+    }
+    /* rating */
+    #rating {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .rating__heading {
+        max-width: none;
+    }
+    .rating__wrap {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .rating__block {
+        width: 100%;
+    }
+    /* feature */
+    .feature__content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature__block {
+        text-align: center;
+    }
+    .feature__arrow {
+        display: none;
+    }
+    /* desc */
+    #desc {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .desc__heading {
+        text-align: center;
+    }
+    .desc__img img {
+        width: 100%;
+    }
+    /* layout */
+    .layout__wrapper {
+        flex-direction: column;
+    }
+    .layout__block.choose {
+        width: 100%;
+    }
+    .layout__info {
+        flex-wrap: wrap;
+    }
+    .layout__btn {
+        width: 100%;
+    }
+    .layout__block  {
+        width: 100%;
+    }
+     /* subcribe */
+     #subcribe {
+        flex-direction: column;
+        padding: 120px 30px;
+        gap: 30px;
+    }
+    .subcribe__title {
+        width: 100%;
+    }
+    .subcribe__block {
+        flex-direction: column;
+        width: 100%;
+    }
+    .subcribe__btn {
+        width: 100%;
+    }
+     /* footer */
+     #footer {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .footer__block {
+        width: 100%;
+    }
+}
